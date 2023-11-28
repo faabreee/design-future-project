@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/confirmation.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <title>Menú de la barra lateral del tablero</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../img/logo.jpg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name"></span>
+                    <span class="profession">Sistema</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+          <div class="menu">
+
+            <li class="search-box" style="display: none;">
+                <i class='bx bx-search icon'></i>
+                <input type="text" placeholder="Buscar...">
+            </li>
+
+            <ul class="menu-links">
+                <li class="nav-link">
+                    <a href="../html/index.html">
+                        <i class='bx bx-home-alt icon' ></i>
+                        <span class="text nav-text">Panel</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="../html/products.html">
+                        <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                        <span class="text nav-text">Ganancia</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="../html/users.html">
+                        <i class='bx bx-bell icon'></i>
+                        <span class="text nav-text">Notificaciones</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="../html/viewing.html">
+                        <i class='bx bx-pie-chart-alt icon' ></i>
+                        <span class="text nav-text">Análisis</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="../html/reports.html">
+                        <i class='bx bx-heart icon' ></i>
+                        <span class="text nav-text">Clientes</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="../html/cart.html">
+                        <i class='bx bx-wallet icon' ></i>
+                        <span class="text nav-text">Ganancia</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+
+            <div class="bottom-content">
+              <ul>
+                  <li>
+                      <a href="#">
+                          <i class='bx bx-log-out icon'></i>
+                          <span class="text nav-text">Cerrar Sesión</span>
+                      </a>
+                  </li>
+
+                  <li class="mode">
+                      <div class="sun-moon">
+                          <i class='bx bx-moon icon moon'></i>
+                          <i class='bx bx-sun icon sun'></i>
+                      </div>
+                      <span class="mode-text text">Dark mode</span>
+
+                      <div class="toggle-switch">
+                          <span class="switch"></span>
+                      </div>                  
+                  </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+      <div class="encabezado">
+      </div>
+
+        <div class="contenedor">
+
+
+            <div class="opciones">
+
+                <div class="navegacion">
+
+                </div>
+
+                <div class="productos">
+
+                    
+                    <div class="lista">
+                        
+                        <svg class="icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                            <circle class="circle" cx="30" cy="30" r="30" fill="none"/>
+                            <path class="check" fill="none" d="m12.5 28l10.0 13 24-22.2"/>
+                        </svg>
+
+                        <div class="mensaje">
+                            <h3>Tu orden fue generada con éxito</h3>
+                        </div>
+
+                        <div class="botones">
+                            <input class="vol" type="button" value="Volver a comprar">
+                            <input class="ver" type="button" value="Ver mis compras">
+                        </div>
+
+
+                    </div>
+                    
+
+                </div>
+                
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+    
+
+    </section>
+
+
+
+    <script src="../js/confirmation.js"></script>
+</body>
+</html>
