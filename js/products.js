@@ -93,3 +93,22 @@ function filtrarProductos(categoria) {
         }
     });
 }
+
+
+
+
+
+
+
+
+
+
+let currentSlide = 0;
+
+function showSlide() {
+    const carousel = document.querySelector('.carousel');
+    currentSlide = (currentSlide + 1) % 5;
+    carousel.style.transform = `translateX(-${currentSlide * 20}%)`;
+}
+
+setInterval(showSlide, 4000); // Cambia la imagen cada 2 segundos (2000 milisegundos)

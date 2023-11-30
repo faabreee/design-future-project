@@ -84,6 +84,7 @@ body.dark{
 .sidebar .icon{
     color: var(--color-black);
     transition: var(--tran-03);
+    font-size: 17px;
 }
 
 .sidebar .text{

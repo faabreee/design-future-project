@@ -84,6 +84,7 @@ body.dark{
 .sidebar .icon{
     color: var(--color-black);
     transition: var(--tran-03);
+    font-size: 17px;
 }
 
 .sidebar .text{
@@ -535,4 +536,19 @@ body.dark .home .text{
 
 
 
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
 
+.carousel {
+    display: flex;
+    width: 500%; /* 5 images * 100% */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
