@@ -82,7 +82,7 @@ body.dark{
 
 .sidebar .text,
 .sidebar .icon{
-    color: var(--text-color);
+    color: var(--color-black);
     transition: var(--tran-03);
 }
 
