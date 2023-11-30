@@ -401,9 +401,7 @@ body.dark .home .text{
     max-height: 200px;
     object-fit: cover;
     min-height: 170px;
-    background-color: #313131;
     border-radius: 15px;
-    background: #313131;
   }
   
   .card-body {
