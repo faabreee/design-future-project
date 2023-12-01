@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/viewing.css">
+    <link rel="stylesheet" href="../css/profile.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     
     <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
@@ -101,70 +101,104 @@
 
     <section class="home">
       <div class="encabezado">
-        <div class="text">> Ver producto</div>
-        <div class="text" style="font-size: 30px; color: var(--color-black);;font-weight: bold;">Estas visualizando el producto Blonde</div>
+        <div class="text">> Ver perfil</div>
+        <div class="text" style="font-size: 30px; color: var(--color-black);;font-weight: bold;">Podras ver y editar tus datos</div>
       </div>
 
         <div class="contenedor">
-
+            <form>
 
             <div class="opciones">
 
-                <div></div>
+                <div class="navegacion">
 
-                <div class="productos">
-                    <div class="imagen">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/45/68/bb4568f3-68cd-619d-fbcb-4e179916545d/BlondCover-Final.jpg/600x600bb.jpg">
-                    </div>
-                    <div class="contenido">
-                        <div class="content-categoria">
-                            <p>Album</p>
-                        </div>
-                        <div class="content-nombre">
-                            <h2>Blonde</h2>
-                        </div>
-                        <div class="content-descripcion">
-                            <p>Nullam ac tristique nulla, at convallis quam. Integer consectetur mi nec magna tristique, non lobortis.</p>
-                        </div>
-                        <div class="precio-cantidad">
-                            <h3>$ 200</h3>
-                            <select>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
-                        </div>
-                        <div class="content-boton">
-                            <a href="../html/cart.html"><input type="button" value="Add to Bag"></a>
-                        </div>
-                    </div>
                 </div>
 
 
+                <div class="productos">
 
+                    <div class="imagen">
+                        <img id="imagenMostrada" src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/45/68/bb4568f3-68cd-619d-fbcb-4e179916545d/BlondCover-Final.jpg/600x600bb.jpg">
+                        <input type="file" id="inputImagen" accept="image/*">
+                        <label for="inputImagen">Seleccionar Imagen</label>
+                      </div>
+                    
+                    <div class="perfil">
+                        <div class="nombres">
 
+                            <div class="nombre">
+                                <span>Nombre:</span>
+                                <input type="text" required>
+                            </div>
 
+                            <div class="apellido">
+                                <span>Apellido:</span>
+                                <input type="text" required>
+                            </div>
+
+                        </div>
+                        <div class="largo">
+                            <span>Telefono:</span>
+                            <input type="tel" required>
+                        </div>
+                        <div class="largo">
+                            <span>Direccion:</span>
+                            <input type="text">
+                        </div>
+                        <div class="largo">
+                            <span>Edad:</span>
+                            <input type="number">
+                        </div>
+                        <div class="sexo">
+                            <span>Sexo:</span>
+                            <div class="option">
+                                <div class="radio">
+                                    <span>Hombre</span>
+                                    <input type="radio" name="sexo" value="hombre">
+                                </div>
+                                <div class="radio">
+                                    <span>Mujer</span>
+                                    <input type="radio" name="sexo" value="mujer">
+                                </div>
+                                <div class="radio">
+                                    <span>Otro</span>
+                                    <input type="radio" name="sexo" value="otro">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="largo">
+                            <span>Email:</span>
+                            <input type="email" required>
+                        </div>
+                        <div class="largo">
+                            <span>Contraseña:</span>
+                            <input type="password" required>
+                        </div>
+                        <div class="largo">
+                            <span>Tipo de usuario:</span>
+                            <select disabled required>
+                                <option>ADMI</option>
+                                <option>USER</option>
+                                <option>PROV</option>
+                            </select>
+                        </div>
+                        <div class="botones">
+                            <input type="submit" value="Guardar">
+                            <input type="button" value="Cancelar">
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
             </div>
 
-
-
-
-
+            </form>
         </div>
-
-    
 
     </section>
 
-
-
-    <script src="../js/viewing.js"></script>
+    <script src="../js/profile.js"></script>
 </body>
 </html>

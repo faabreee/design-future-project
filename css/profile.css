@@ -291,7 +291,6 @@ body.dark .switch::before{
     top: 0;
     top: 0;
     left: 250px;
-    height: 100vh;
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
@@ -325,245 +324,175 @@ body.dark .home .text{
 }
 
 .opciones{
-  width: 100%;
-  height: min-content;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding-top: 50px;
-}
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+  }
+  
+
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
 
 .navegacion{
     width: 100%;
     display: flex;
     gap: 20px;
 }
-.navegacion .buscador{
-    width: 300px;
-    height: 34px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 13px;
-}
-.navegacion .boton{
-    width: 110px;
-}
-    .navegacion .boton input{
-        width: 100%;
-        height: 34px;
-        background-color: black;
-        border-radius: 13px;
-        color: white;
-        font-weight: 600;
-        border-style: none;
-        transition: 0.2s;
-        cursor: pointer;
-    }
-    .navegacion .boton input:hover{
-        opacity: 0.95;
-    }
-    .navegacion .boton input:active{
-        transform: scale(0.95);
-    }
-.navegacion .buscador input{
-    width: 265px;
-    height: 100%;
-    border-style: none;
-    border-radius: 13px;
-    padding: 0px 20px 0px 10px;
-}
-.buscador input:focus{
-    outline: none;
-}
-
-.buscador .icono{
-    width: 35px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.botones{
-    width: 65%;
-    display: flex;
-    justify-content: end;
-}
-
-.categorias{
-    width: 650px;
-    display: flex;
-    justify-content: end;
-    gap: 15px;
-}
-.categorias button{
-    width: auto;
-    height: 34px;
-    padding: 0px 30px 0px 30px;
-    background-color: var(--sidebar-color);
-    border-radius: 13px;
-    color: var(--color-black);
-    font-weight: 600;
-    border-style: none;
-    cursor: pointer;
-    transition: 0.2s;
-}
-    .categorias button:active{
-        transform: scale(0.95);
-    }
-
-.filtro-btn.seleccionado {
-    background-color: black;
-    color: white;
-}
-
-
-
-
 
 .productos{
     width: 100%;
+    min-height: min-content;
     display: flex;
-    flex-wrap: wrap;
     gap: 40px;
-    padding-bottom: 60px;
-    justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.card {
-    padding: 20px;
-    width: 296px;
-    min-height: 370px;
-    border-radius: 20px;
-    background: var(--sidebar-color);
-    box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
-    transition: 0.4s;
-  }
-  
-  .card:hover {
-    translate: 0 -10px;
-  }
-  
-  .card-title {
-    font-size: 18px;
-    font-weight: 600;
+    justify-content: start;
+    background-color: var(--sidebar-color);
     color: var(--color-black);
-    margin: 15px 0 0 10px;
-  }
-  
-  .card-image {
-    width: 100%;
-    max-height: 170px;
-    object-fit: cover;
-    min-height: 170px;
-    background-color: #313131;
+    padding: 30px;
     border-radius: 15px;
-    background: #313131;
-  }
-  
-  .card-body {
-    margin: 13px 0 0 10px;
-    color: var(--text-color);
-    font-size: 15px;
-  }
-  
-  .footer {
-    width: 120px;
-    height: 30px;
-    float: right;
-    margin: 28px 0 0 18px;
-    font-size: 13px;
-    color: var(--text-color);
-  }
+    margin-bottom: 50px;
+}
 
-
-  .footer input{
+.contenedor form{
     width: 100%;
+}
+
+.imagen {
+    width: 420px;
     height: 100%;
-    padding-left: 20px;
-    position: relative;
-    background-color: var(--color-black);
-    color: var(--body-color);
-    border-radius: 9px;
-    border-style: none;
-    cursor: pointer;
-    text-align: start;
-    font-weight: 1000;
-    transition: 0.2s;
-  }
-  .footer input:active{
-    transform: scale(0.95);
-  }
-
-  .footer i{
-    position: relative;
-    color: var(--body-color);
-    left: 87px;
-    bottom: 22px;
-    z-index: 2;
-  }
-  
-  .by-name {
-    font-weight: 700;
-  }
-
-
-
-
-
-
-
-
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel {
+    padding: 30px;
     display: flex;
-    width: 500%; /* 5 images * 100% */
-    transition: transform 0.5s ease-in-out;
-}
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 
-.carousel img {
-    width: 100%;
-    height: 300px;
+  .imagen img {
+    width: 360px;
+    height: 360px;
+    border-radius: 8px;
     object-fit: cover;
+    margin-top: 10px;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  label {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-black);
+    border-radius: 13px;
+    cursor: pointer;
+    color: var(--body-color);
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s
+  }
+
+.perfil{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+    font-weight: 500;
+    
+}
+
+.perfil input{
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    border-style: none;
+    background-color: var(--body-color);
+    color: var(--color-black);
 }
 
 
+.nombres{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nombres .nombre{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.nombres .apellido{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
 
-
-
-.nuevos{
+.largo{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+}
+
+.sexo{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.sexo .option{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300;
+}
+.sexo .option .radio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sexo .option .radio input{
+    cursor: pointer;
+}
+
+.perfil select{
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    border-style: none;
+    background-color: var(--body-color);
     color: var(--color-black);
 }
-.nuevos h1{
-    font-size: 25px;
+
+.perfil .botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
+.perfil .botones input{
+    width: 35%;
+    background-color: var(--color-black);
+    border-radius: 13px;
+    cursor: pointer;
+    color: var(--body-color);
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.perfil .botones input:active{
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
