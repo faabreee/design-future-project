@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+
     <title>Menú de la barra lateral del tablero</title> 
 </head>
 <body>
@@ -102,7 +103,7 @@
     <section class="home">
       <div class="encabezado">
         <div class="text">> Ver perfil</div>
-        <div class="text" style="font-size: 30px; color: var(--color-black);;font-weight: bold;">Podras ver y editar tus datos</div>
+        <div class="text" style="font-size: 30px; color: var(--color-black);;font-weight: bold;">Verificar y actualizar tus datos</div>
       </div>
 
         <div class="contenedor">
@@ -120,7 +121,10 @@
                     <div class="imagen">
                         <img id="imagenMostrada" src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/45/68/bb4568f3-68cd-619d-fbcb-4e179916545d/BlondCover-Final.jpg/600x600bb.jpg">
                         <input type="file" id="inputImagen" accept="image/*">
-                        <label for="inputImagen">Seleccionar Imagen</label>
+                        <label for="inputImagen">
+                            <p>ACTUALIZAR IMAGEN</p>
+                            <i class="fa-solid fa-image"></i>
+                        </label>
                       </div>
                     
                     <div class="perfil">
@@ -171,16 +175,17 @@
                             <span>Email:</span>
                             <input type="email" required>
                         </div>
-                        <div class="largo">
+                        <div class="clave">
                             <span>Contraseña:</span>
-                            <input type="password" required>
+                            <input type="password" id="contrasena" required>
+                            <i class="toggle-icon fa-solid fa-eye" onclick="mostrarContrasena()"></i>
                         </div>
                         <div class="largo">
                             <span>Tipo de usuario:</span>
                             <select disabled required>
-                                <option>ADMI</option>
-                                <option>USER</option>
-                                <option>PROV</option>
+                                <option value="ADMI">Administrador</option>
+                                <option value="USER">Usuario</option>
+                                <option value="PROV">Proveedor</option>
                             </select>
                         </div>
                         <div class="botones">

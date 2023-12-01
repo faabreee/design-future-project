@@ -389,7 +389,7 @@ body.dark .home .text{
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: var(--color-black);
     border-radius: 13px;
     cursor: pointer;
@@ -397,6 +397,9 @@ body.dark .home .text{
     font-size: 15px;
     font-weight: 600;
     transition: 0.2s
+  }
+  label i{
+    font-size: 20px;
   }
 
 .perfil{
@@ -460,6 +463,25 @@ body.dark .home .text{
 .sexo .option .radio input{
     cursor: pointer;
 }
+
+
+.clave{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.toggle-icon {
+    position: absolute;
+    right: 16px;
+    top: 44px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
 
 .perfil select{
     padding: 10px;

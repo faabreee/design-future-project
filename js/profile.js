@@ -142,3 +142,31 @@ inputImagen.addEventListener('change', (event) => {
     reader.readAsDataURL(file);
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+function mostrarContrasena() {
+  var campoContrasena = document.getElementById("contrasena");
+  var icono = document.querySelector(".toggle-icon");
+
+  if (campoContrasena.type === "password") {
+    if (campoContrasena.value !== "") {
+      campoContrasena.type = "text";
+      icono.classList.remove("fa-eye");
+      icono.classList.add("fa-eye-slash");
+    }
+  } else {
+    campoContrasena.type = "password";
+    icono.classList.remove("fa-eye-slash");
+    icono.classList.add("fa-eye");
+  }
+}
