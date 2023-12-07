@@ -410,6 +410,10 @@ body.dark .home .text{
     font-weight: 500;
     
 }
+.perfil p{
+    font-weight: 300;
+    font-size: 15px;
+}
 
 .perfil input{
     padding: 10px;
